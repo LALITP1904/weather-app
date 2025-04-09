@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </div>
+
+        <!-- Weather Card -->
+        <div class="card">
+            <div class="card-content">
+                <!-- Controls -->
+                <div class="controls">
+                    <div class="search-group">
+                        <input type="text" class="search-bar" placeholder="Search city...">
+                        <button class="cityName"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="curLoca"><i class="fas fa-location-arrow"></i> Current</button>
+                </div>
+
+                <!-- Weather Information -->
+                <div class="weather-info">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2 class="city">Loading...</h2>
+                    </div>
+                    <div class="weather-icon-container">
+                        <img src="" alt="Weather Icon" class="weather-icon">
+                    </div>
+                    <p class="weather-condition">--</p>
+
+                    <div class="temperature-container">
+                        <h1 class="temperature">--</h1>
+                    </div>
+
+                    <!-- Weather Details -->
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <span class="detail-value humidity">--%</span>
+                            <span class="detail-label">Humidity</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <span class="detail-value wind">--m/s</span>
+                            <span class="detail-label">Wind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Searches -->
+                <div class="search-history">
+                    <h3><i class="fas fa-history"></i> Recent Searches</h3>
+                    <div class="history-items"></div>
+                </div>
+
+                <!-- 5-Day Forecast -->
+                <div class="forecast">
+                    <h3><i class="fas fa-calendar-alt"></i> 5-Day Forecast</h3>
+                    <div class="forecast-cards"></div>
+                </div>
+
+                <!-- Refresh Button -->
+                <button class="refresh"><i class="fas fa-sync-alt"></i></button>
+            </div>
+        </div>
+
+        <!-- Loader Animation -->
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>

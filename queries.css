@@ -1,0 +1,81 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .card {
+        padding: 1.75rem;
+        border-radius: 20px;
+    }
+
+    .temperature {
+        font-size: 3rem;
+    }
+
+    .weather-icon-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .weather-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .search-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    button.refresh {
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather-details {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .detail-item {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        padding: 1.25rem;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .temperature {
+        font-size: 2.5rem;
+    }
+
+    .weather-condition {
+        font-size: 1rem;
+    }
+
+    .weather-icon-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .detail-item {
+        width: 50%;
+    }
+}
